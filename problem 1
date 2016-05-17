@@ -1,0 +1,20 @@
+##problem 1
+N=500
+x<-rep(0,N)
+c=4#choose  sup(f(x)/g(x))<c)
+n=0;m=0
+while (m<=500)
+{
+y<-runif(1)
+u<-runif(1)
+if (u<=dbeta(y,2,9)/c)
+  {
+  x[m]<- y
+  m<-m+1
+}
+n=n+1
+} 
+acc=m/n#acceptance rate
+hist(x,breaks = 30)#histgram
+plot(density(x))#denstiy curve
+curve(dbeta(x,2,9),col=2,add=T)#the line of the beta(2,9)
