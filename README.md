@@ -1,2 +1,3 @@
 # stomsm
-modern statistical methods
+ The midterm homework of modern statistic methods 
+ 
