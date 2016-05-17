@@ -1,0 +1,2 @@
+# stomsm
+modern statistical methods
